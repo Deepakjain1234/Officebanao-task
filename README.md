@@ -13,30 +13,23 @@ This is a simple backend API for managing to-do notes. It allows users to create
 Ensure you have the following installed:
 - Node.js (latest LTS version recommended)
 - npm or yarn
-- A database (SQLite, MongoDB, or PostgreSQL)
+- A database (MYSQL)
 
 ### Steps to Set Up
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repository/todo-notes-api.git
-   cd todo-notes-api
+   git clone https://github.com/Deepakjain1234/Officebanao-task
+   cd Officebanao-task
    ```
 2. Install dependencies:
    ```sh
    npm install
    ```
-3. Configure environment variables:
-   - Create a `.env` file in the root directory.
-   - Add necessary configurations (example for MongoDB):
-     ```env
-     PORT=5000
-     DATABASE_URL=mongodb://localhost:27017/todo-notes
-     ```
-4. Run the server:
+3. Run the server:
    ```sh
    npm start
    ```
-   The API will be available at `http://localhost:5000`
+   The API will be available at `http://localhost:3001`
 
 ## API Endpoints
 
@@ -106,9 +99,9 @@ Ensure you have the following installed:
 - Returns 404 if the note does not exist.
 
 ## Code Structure
-- `server.js` - Main entry point of the application.
+- `index.js` - Main entry point of the application.
 - `routes/` - Contains route definitions.
-- `controllers/` - Contains business logic for handling requests.
+- `controller/` - Contains business logic for handling requests.
 - `models/` - Contains database models.
 - `config/` - Handles database configuration.
 
